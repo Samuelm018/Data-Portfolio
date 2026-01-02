@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0F172A;
+  --color-card: #111827;
+  --color-primary: #2563EB;
+  --color-secondary: #22C55E;
+  --color-text-main: #E5E7EB;
+  --color-text-muted: #9CA3AF;
+  
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-poppins);
+}
+
+/* Custom Utilities */
+@utility container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-main);
+  @apply font-sans antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading font-bold text-white;
+}
