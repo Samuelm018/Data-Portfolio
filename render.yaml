@@ -1,9 +1,9 @@
 services:
-  - type: web
+  - type: static
     name: portfolio-website
-    env: node
+    env: static
     buildCommand: cd portfolio-website && npm install && npm run build
-    startCommand: cd portfolio-website && npm start
+    publish: portfolio-website/out
     envVars:
       - key: NODE_VERSION
         value: 20
