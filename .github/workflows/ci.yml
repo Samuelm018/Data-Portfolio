@@ -10,6 +10,10 @@ jobs:
   build-and-test:
     name: Build and Test
     runs-on: ubuntu-latest
+    
+    defaults:
+      run:
+        working-directory: ./portfolio-website
 
     steps:
       - name: Checkout repository
@@ -20,6 +24,7 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
+          cache-dependency-path: portfolio-website/package-lock.json
 
       - name: Install dependencies
         run: npm ci
@@ -34,7 +39,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build-output
-          path: .next
+          path: portfolio-website/.next
           retention-days: 7
 
   deploy:
@@ -45,8 +50,6 @@ jobs:
     
     steps:
       - name: Trigger Render Deploy
-        # You need to configure RENDER_DEPLOY_HOOK_URL in your GitHub Repository Secrets
-        # Get the Deploy Hook URL from Render Dashboard -> Settings -> Deploy Hook
         run: |
           if [ -n "${{ secrets.RENDER_DEPLOY_HOOK_URL }}" ]; then
             curl "${{ secrets.RENDER_DEPLOY_HOOK_URL }}"
