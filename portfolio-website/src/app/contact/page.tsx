@@ -17,9 +17,9 @@ export default function ContactPage() {
         <div className="py-20 flex items-center min-h-[calc(100vh-theme(spacing.16))]">
             <div className="container-custom max-w-3xl">
                 <div className="text-center mb-16">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-6">Let's Connect</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold mb-6">Let&apos;s Connect</h1>
                     <p className="text-xl text-gray-400">
-                        I'm currently looking for Data Analyst opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                        I&apos;m currently looking for Data Analyst opportunities. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
                     </p>
                 </div>
 

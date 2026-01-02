@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export default function AboutPage() {
@@ -16,7 +15,7 @@ export default function AboutPage() {
                                 I am a results-driven Data Analyst with a strong foundation in translating complex datasets into actionable business insights. My expertise lies in building intuitive dashboards, conducting rigorous statistical analysis, and optimizing data workflows to support strategic decision-making.
                             </p>
                             <p>
-                                With proficiency in SQL, Power BI, Python, and Excel, I focus on solving real-world business problems—whether it's reducing customer churn, optimizing HR workforce planning, or analyzing sales performance. I believe that data is only as valuable as the decisions it empowers.
+                                With proficiency in SQL, Power BI, Python, and Excel, I focus on solving real-world business problems—whether it&apos;s reducing customer churn, optimizing HR workforce planning, or analyzing sales performance. I believe that data is only as valuable as the decisions it empowers.
                             </p>
                             <p>
                                 I am currently seeking opportunities where I can leverage my analytical skills to drive business growth and operational efficiency.
