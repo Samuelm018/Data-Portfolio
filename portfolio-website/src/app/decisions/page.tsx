@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { decisions } from "@/lib/decisions";
-import { ArrowRight, Github } from "lucide-react";
+import { Github } from "lucide-react";
 import Image from "next/image";
 
 export default function DecisionsPage() {
@@ -15,7 +15,7 @@ export default function DecisionsPage() {
                 </div>
 
                 <div className="grid gap-12">
-                    {decisions.map((decision, index) => (
+                    {decisions.map((decision) => (
                         <div
                             key={decision.slug}
                             className="group relative bg-[#141922] border border-[#1F2937] rounded-xl overflow-hidden hover:border-[#F59E0B]/50 transition-all duration-300"

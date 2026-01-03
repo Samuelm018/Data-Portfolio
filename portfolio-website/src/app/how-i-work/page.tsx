@@ -17,7 +17,7 @@ export default function HowIWorkPage() {
                                 I believe that a dashboard without a clear purpose is just a collection of charts.
                             </p>
                             <p>
-                                My approach focuses on the "Why"—identifying the critical business decisions stakeholders face, then designing backward to ensure every data point serves a purpose. I don't just build dashboards; I build decision support systems.
+                                My approach focuses on the &quot;Why&quot;—identifying the critical business decisions stakeholders face, then designing backward to ensure every data point serves a purpose. I don&apos;t just build dashboards; I build decision support systems.
                             </p>
                         </div>
                     </div>

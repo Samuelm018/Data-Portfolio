@@ -1,5 +1,5 @@
 
-import { decisions, Decision } from "@/lib/decisions";
+import { decisions } from "@/lib/decisions";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
