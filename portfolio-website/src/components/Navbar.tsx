@@ -7,9 +7,8 @@ import { Menu, X } from "lucide-react";
 
 const navLinks = [
     { name: "Home", href: "/" },
-    { name: "Projects", href: "/projects" },
-    { name: "Skills", href: "/skills" },
-    { name: "About", href: "/about" },
+    { name: "Decisions", href: "/decisions" },
+    { name: "How I Work", href: "/how-i-work" },
     { name: "Contact", href: "/contact" },
 ];
 
@@ -18,7 +17,7 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0F172A]/90 backdrop-blur-md border-b border-gray-800">
+        <nav className="fixed top-0 left-0 right-0 z-50 bg-navbar/90 backdrop-blur-md border-b border-white/10">
             <div className="container-custom flex items-center justify-between h-16">
                 <Link href="/" className="text-xl font-bold font-heading text-white tracking-wide z-50" onClick={() => setIsOpen(false)}>
                     SAMUEL M<span className="text-primary">.</span>
@@ -52,7 +51,7 @@ export default function Navbar() {
 
             {/* Mobile Menu Overlay */}
             <div
-                className={`fixed inset-0 bg-[#0F172A] z-40 flex flex-col items-center justify-center space-y-8 transition-opacity duration-300 md:hidden ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+                className={`fixed inset-0 bg-navbar z-40 flex flex-col items-center justify-start pt-24 space-y-8 transition-opacity duration-300 md:hidden ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
                     }`}
             >
                 {navLinks.map((link) => {

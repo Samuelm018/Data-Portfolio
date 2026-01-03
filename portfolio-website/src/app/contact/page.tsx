@@ -17,27 +17,28 @@ export default function ContactPage() {
         <div className="py-20 flex items-center min-h-[calc(100vh-theme(spacing.16))]">
             <div className="container-custom max-w-3xl">
                 <div className="text-center mb-16">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-6">Let&apos;s Connect</h1>
-                    <p className="text-xl text-gray-400">
-                        I&apos;m currently looking for Data Analyst opportunities. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
+                    <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact</h1>
+                    <p className="text-xl text-[#9CA3AF]">
+                        Direct channels only. No forms.
                     </p>
                 </div>
 
                 <div className="grid gap-6">
-                    <div className="bg-card border border-gray-800 p-8 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6 hover:border-primary/50 transition-colors group">
+                    {/* Email Card */}
+                    <div className="bg-[#141922] border border-[#1F2937] p-8 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6 hover:border-[#F59E0B]/50 transition-colors group">
                         <div className="flex items-center gap-6">
-                            <div className="p-4 bg-primary/10 text-primary rounded-xl group-hover:bg-primary group-hover:text-white transition-colors">
+                            <div className="p-4 bg-[#F59E0B]/10 text-[#F59E0B] rounded-xl group-hover:bg-[#F59E0B] group-hover:text-white transition-colors">
                                 <Mail size={32} />
                             </div>
                             <div className="text-left">
-                                <div className="text-sm text-gray-500 uppercase font-semibold tracking-wider mb-1">Email</div>
+                                <div className="text-sm text-[#6B7280] uppercase font-semibold tracking-wider mb-1">Email</div>
                                 <div className="text-xl md:text-2xl font-bold text-white break-all">{email}</div>
                             </div>
                         </div>
 
                         <button
                             onClick={handleCopy}
-                            className="px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white font-semibold rounded-lg transition-all flex items-center min-w-[140px] justify-center"
+                            className="px-6 py-3 bg-[#1F2937] hover:bg-[#374151] text-white font-semibold rounded-lg transition-all flex items-center min-w-[140px] justify-center"
                         >
                             {copied ? (
                                 <>
@@ -51,42 +52,44 @@ export default function ContactPage() {
                         </button>
                     </div>
 
+                    {/* LinkedIn Card */}
                     <a
                         href="https://www.linkedin.com/in/samuel-m-049988249"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-card border border-gray-800 p-8 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6 hover:border-[#0077b5]/50 transition-colors group"
+                        className="bg-[#141922] border border-[#1F2937] p-8 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6 hover:border-[#F59E0B]/50 transition-colors group"
                     >
                         <div className="flex items-center gap-6">
-                            <div className="p-4 bg-[#0077b5]/10 text-[#0077b5] rounded-xl group-hover:bg-[#0077b5] group-hover:text-white transition-colors">
+                            <div className="p-4 bg-[#1F2937] text-[#9CA3AF] rounded-xl group-hover:bg-[#F59E0B] group-hover:text-white transition-colors">
                                 <Linkedin size={32} />
                             </div>
                             <div className="text-left">
-                                <div className="text-sm text-gray-500 uppercase font-semibold tracking-wider mb-1">LinkedIn</div>
+                                <div className="text-sm text-[#6B7280] uppercase font-semibold tracking-wider mb-1">LinkedIn</div>
                                 <div className="text-xl md:text-2xl font-bold text-white">Connect on LinkedIn</div>
                             </div>
                         </div>
-                        <div className="px-6 py-3 text-gray-400 group-hover:text-white transition-colors">
+                        <div className="px-6 py-3 text-[#9CA3AF] group-hover:text-white transition-colors">
                             <ExternalLink size={24} />
                         </div>
                     </a>
 
+                    {/* GitHub Card */}
                     <a
                         href="https://github.com/Samuelm018"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-card border border-gray-800 p-8 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6 hover:border-gray-500 transition-colors group"
+                        className="bg-[#141922] border border-[#1F2937] p-8 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6 hover:border-[#F59E0B]/50 transition-colors group"
                     >
                         <div className="flex items-center gap-6">
-                            <div className="p-4 bg-gray-700/10 text-gray-300 rounded-xl group-hover:bg-white group-hover:text-black transition-colors">
+                            <div className="p-4 bg-[#1F2937] text-[#9CA3AF] rounded-xl group-hover:bg-[#F59E0B] group-hover:text-white transition-colors">
                                 <Github size={32} />
                             </div>
                             <div className="text-left">
-                                <div className="text-sm text-gray-500 uppercase font-semibold tracking-wider mb-1">GitHub</div>
+                                <div className="text-sm text-[#6B7280] uppercase font-semibold tracking-wider mb-1">GitHub</div>
                                 <div className="text-xl md:text-2xl font-bold text-white">Check out my Repos</div>
                             </div>
                         </div>
-                        <div className="px-6 py-3 text-gray-400 group-hover:text-white transition-colors">
+                        <div className="px-6 py-3 text-[#9CA3AF] group-hover:text-white transition-colors">
                             <ExternalLink size={24} />
                         </div>
                     </a>

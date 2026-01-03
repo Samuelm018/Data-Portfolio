@@ -10,19 +10,19 @@ export default function Hero() {
                 <div className="space-y-8 z-10">
                     <div className="space-y-4">
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white">
-                            Data Analyst <span className="text-primary">transforming data</span> into business insights
+                            I turn data into <span className="text-primary">business decisions</span>.
                         </h1>
                         <p className="text-lg text-gray-400 font-medium leading-relaxed max-w-2xl">
-                            I’m Samuel M, a Data Analyst with hands-on experience in SQL, Power BI, Python, and Excel, focused on transforming raw data into clear, actionable business insights. I build end-to-end analytics solutions—from data cleaning and querying to interactive dashboards—that support data-driven decision-making.
+                            Each case below shows a real business question, the analysis performed, and the decision it enables.
                         </p>
                     </div>
 
                     <div className="flex flex-wrap gap-4">
                         <Link
-                            href="/projects"
-                            className="px-8 py-3 bg-primary hover:bg-blue-600 text-white font-semibold rounded-lg transition-all shadow-[0_0_20px_-5px_var(--color-primary)] hover:shadow-[0_0_25px_-5px_var(--color-primary)]"
+                            href="/decisions"
+                            className="px-8 py-3 bg-primary hover:bg-primary-hover text-white font-semibold rounded-lg transition-all shadow-[0_0_20px_-5px_var(--color-primary)] hover:shadow-[0_0_25px_-5px_var(--color-primary)]"
                         >
-                            View Projects
+                            View Decisions
                         </Link>
                         <a
                             href="/SAMUEL_M_Resume.pdf"
@@ -34,18 +34,15 @@ export default function Hero() {
                         </a>
                     </div>
 
-                    <div className="grid grid-cols-3 gap-4 pt-8">
+                    <div className="grid grid-cols-2 gap-4 pt-8">
                         <div className="bg-card border border-gray-800 p-4 rounded-xl">
                             <div className="text-3xl font-bold text-white mb-1">4+</div>
-                            <div className="text-sm text-gray-500">Major Projects</div>
+                            <div className="text-sm text-gray-500">Business Cases</div>
                         </div>
-                        <div className="bg-card border border-gray-800 p-4 rounded-xl">
-                            <div className="text-3xl font-bold text-white mb-1">10+</div>
-                            <div className="text-sm text-gray-500">Tools Mastered</div>
-                        </div>
+
                         <div className="bg-card border border-gray-800 p-4 rounded-xl">
                             <div className="text-3xl font-bold text-white mb-1">100%</div>
-                            <div className="text-sm text-gray-500">Business Focus</div>
+                            <div className="text-sm text-gray-500">Decision Focused</div>
                         </div>
                     </div>
                 </div>
